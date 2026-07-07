@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife™ - Chi Tiết Lớp Học</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0b0c10;
+        --color-secondary: #1a1b20;
+        --color-accent: #c5a880;
+        --color-text-main: #ffffff;
+        --color-text-muted: #8a8d91;
+        --color-btn-hover: #d8bf9c;
+        --color-span: #eab308;
+      }
+    </style>
+  </head>
+  <body class="bg-primary text-text-main font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-secondary border-b border-gray-800 p-4">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center md:justify-between relative"
+      >
+        <a
+          href="index.html"
+          class="w-48 lg:w-50 block hover:opacity-80 transition-opacity mx-auto md:mx-0"
+        >
+          <img src="img/Logo.png" alt="FitLife logo" class="w-full h-auto" />
+        </a>
+
+        <nav class="hidden md:flex gap-6 font-medium text-2xl">
+          <a href="index.html" class="hover:text-accent">Trang chủ</a>
+          <a href="class.html" class="text-accent font-bold">Lớp học</a>
+          <a href="contact.html" class="hover:text-accent">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-12 space-y-24">
+      <main>
+        <div class="mb-12 border-b border-gray-800 pb-6">
+          <h3 class="text-main font-bold uppercase tracking-wider text-xl pt-1">
+            Bộ Môn Tâm Điểm
+          </h3>
+          <h1 class="text-span text-4xl md:text-5xl font-extrabold mt-2">
+            Yoga & Pilates Balance
+          </h1>
+          <p class="text-text-muted mt-2 text-xl md:text-base mt-4">
+            Xem lịch tập chi tiết trong tuần và những giá trị sức khỏe tuyệt vời
+            bộ môn mang lại.
+          </p>
+        </div>
+
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+            <span class="text-accent">📅</span> Lịch Học Trong Tuần:
+          </h2>
+          <div
+            class="w-full overflow-x-auto rounded-xl border border-gray-800 bg-secondary"
+          >
+            <table class="w-full text-left border-collapse min-w-[700px]">
+              <thead>
+                <tr class="border-b border-gray-800 bg-black/30">
+                  <th class="p-4 font-bold text-span text-xl">Ca Học</th>
+                  <th class="p-4 font-bold text-text-main text-xl">Thứ Hai</th>
+                  <th class="p-4 font-bold text-text-main text-xl">Thứ Ba</th>
+                  <th class="p-4 font-bold text-text-main text-xl">Thứ Tư</th>
+                  <th class="p-4 font-bold text-text-main text-xl">Thứ Năm</th>
+                  <th class="p-4 font-bold text-text-main text-xl">Thứ Sáu</th>
+                  <th class="p-4 font-bold text-text-main text-xl">Thứ Bảy</th>
+                  <th class="p-4 font-bold text-red-400 text-xl">Chủ Nhật</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-gray-800/60">
+                <tr class="hover:bg-primary/30 transition-colors">
+                  <td
+                    class="p-4 font-semibold text-span text-xl whitespace-nowrap bg-black/10"
+                  >
+                    Ca Sáng
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">06:00 - 07:15</p>
+                    <p class="text-base font-medium">Yoga Bình Minh</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">08:30 - 09:45</p>
+                    <p class="text-base font-medium">Yoga Trị Liệu</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">06:00 - 07:15</p>
+                    <p class="text-base font-medium">Yoga Bình Minh</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">08:30 - 09:45</p>
+                    <p class="text-base font-medium">Yoga Trị Liệu</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">06:00 - 07:15</p>
+                    <p class="text-base font-medium">Yoga Bình Minh</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">09:00 - 10:15</p>
+                    <p class="text-base font-medium">Power Yoga</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">09:00 - 10:30</p>
+                    <p class="text-base font-medium">Workshop Chữa Lành</p>
+                  </td>
+                </tr>
+                <tr class="hover:bg-primary/30 transition-colors">
+                  <td
+                    class="p-4 font-semibold text-span text-xl whitespace-nowrap bg-black/10"
+                  >
+                    Ca Tối
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">18:30 - 19:45</p>
+                    <p class="text-base font-medium">Pilates Core</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">17:30 - 18:45</p>
+                    <p class="text-base font-medium">Hatha Flow</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">18:30 - 19:45</p>
+                    <p class="text-base font-medium">Pilates Matwork</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">19:30 - 20:45</p>
+                    <p class="text-base font-medium">Yin Yoga (Thiền)</p>
+                  </td>
+                  <td class="p-4">
+                    <p class="text-base text-span">18:30 - 19:45</p>
+                    <p class="text-base font-medium">Pilates Bóng/Vòng</p>
+                  </td>
+                  <td class="p-4 text-text-muted text-base italic">
+                    Nghỉ ngơi
+                  </td>
+                  <td class="p-4 text-text-muted text-base italic">
+                    Nghỉ ngơi
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-secondary p-6 rounded-2xl border border-gray-800 flex gap-4 items-start hover:border-accent transition-all duration-300"
+          >
+            <div
+              class="text-2xl bg-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 border border-gray-800 text-accent hover:bg-accent hover:text-primary transition-colors"
+            >
+              💪
+            </div>
+            <div>
+              <h3
+                class="font-bold text-2xl mb-1 hover:text-span transition-colors"
+              >
+                Cải thiện cơ lõi & Săn chắc
+              </h3>
+              <p class="text-text-muted text-base leading-relaxed">
+                Pilates tập trung siết chặt các nhóm cơ sâu bên trong bụng,
+                hông, đùi giúp vóc dáng mảnh mai nhưng cực khỏe khoắn.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondary p-6 rounded-2xl border border-gray-800 flex gap-4 items-start hover:border-accent transition-all duration-300"
+          >
+            <div
+              class="text-2xl bg-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 border border-gray-800 text-accent hover:bg-accent hover:text-primary transition-colors"
+            >
+              🧘‍♀️
+            </div>
+            <div>
+              <h3
+                class="font-bold text-2xl mb-1 hover:text-span transition-colors"
+              >
+                Tăng độ dẻo dai & Sửa tư thế
+              </h3>
+              <p class="text-text-muted text-base leading-relaxed">
+                Các động tác kéo giãn của Yoga giúp kéo dài cột sống, mở khớp
+                vai, chữa gù lưng và chứng đau mỏi cổ vai gáy.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="bg-secondary p-6 rounded-2xl border border-gray-800 flex gap-4 items-start hover:border-accent transition-all duration-300"
+          >
+            <div
+              class="text-2xl bg-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 border border-gray-800 text-accent hover:bg-accent hover:text-primary transition-colors"
+            >
+              🧠
+            </div>
+            <div>
+              <h3
+                class="font-bold text-2xl mb-1 hover:text-span transition-colors"
+              >
+                Giảm stress & Ngủ sâu giấc
+              </h3>
+              <p class="text-text-muted text-base leading-relaxed">
+                Kết hợp hơi thở điều hòa giúp xoa dịu hệ thần kinh, loại bỏ áp
+                lực mệt mỏi sau ngày dài làm việc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

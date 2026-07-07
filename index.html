@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="vi" class="scroll-smooth scroll-pt-20">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife Premium Fitness Club</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0b0c10;
+        --color-secondary: #1a1b20;
+        --color-accent: #c5a880;
+        --color-text-main: #ffffff;
+        --color-text-muted: #8a8d91;
+        --color-btn-hover: #d8bf9c;
+        --color-span: #eab308;
+      }
+    </style>
+  </head>
+  <body id="top" class="bg-primary text-text-main">
+    <header class="sticky top-0 z-50 bg-secondary text-text-main p-4">
+      <div class="w-full px-4 md:px-8 flex items-center justify-between">
+        <!-- LOGO -->
+        <div class="flex-1 flex justify-start">
+          <a
+            href="index.html"
+            class="w-28 lg:w-50 block hover:opacity-80 transition-opacity"
+          >
+            <img src="img/Logo.png" alt="FitLife logo" class="w-full h-auto" />
+          </a>
+        </div>
+        <!-- THANH HAMNUGER -->
+        <button
+          id="mobileMenuBtn"
+          class="md:hidden p-2 text-text-main focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+        <!-- THÀNH NAVBAR -->
+        <nav
+          class="hidden md:flex flex-1 justify-center gap-4 lg:gap-6 whitespace-nowrap font-medium"
+        >
+          <a href="#top" class="text-2xl hover:text-accent transition-colors"
+            >Trang chủ</a
+          >
+          <a href="#vip" class="text-2xl hover:text-accent transition-colors"
+            >Dịch vụ và đặc quyền</a
+          >
+          <a
+            href="#khoa-hoc"
+            class="text-2xl hover:text-accent transition-colors"
+            >Lớp học</a
+          >
+          <a
+            href="contact.html"
+            class="text-2xl hover:text-accent transition-colors"
+            >Liên hệ</a
+          >
+        </nav>
+        <!-- BUTTON THANH GIA -->
+        <div
+          class="hidden md:flex flex-1 justify-end items-center gap-2 lg:gap-4"
+        >
+          <div
+            class="flex items-center border border-text-muted rounded-full px-2 py-1 lg:px-3"
+          >
+            <input
+              type="text"
+              placeholder="Tìm kiếm khóa học ..."
+              class="bg-transparent outline-none w-20 lg:w-auto text-base p-2"
+            />
+            <button type="submit" class="ml-1 text-accent">🔍</button>
+          </div>
+          <button
+            class="bg-accent text-primary px-3 py-1 lg:px-4 lg:py-2 rounded-full hover:bg-btn-hover transition-colors font-semibold whitespace-nowrap text-base lg:text-lg"
+          >
+            <a href="contact.html">Tham gia ngay</a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- TẠO SCRIPT -->
+    <div
+      id="mobileMenu"
+      class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out bg-secondary px-4 md:hidden"
+    >
+      <nav class="flex flex-col gap-4 mt-2 pb-4">
+        <a
+          href="#top"
+          class="hover:text-xl text-accent border-b border-gray-700 pb-2"
+          >Trang chủ</a
+        >
+        <a href="#vip" class="text-xl hover:text-accent transition-colors"
+          >Dịch vụ và đặc quyền</a
+        >
+        <a
+          href="#khoa-hoc"
+          class="hover:text-xl text-accent border-b border-gray-700 pb-2"
+          >Lớp học</a
+        >
+        <a href="contact.html" class="hover:text-xl text-accent pb-2"
+          >Liên hệ</a
+        >
+      </nav>
+    </div>
+
+    <script>
+      // Tìm nút bấm và menu thông qua ID của chúng
+      const btn = document.getElementById("mobileMenuBtn");
+      const menu = document.getElementById("mobileMenu");
+
+      // Lắng nghe sự kiện 'click' trên nút bấm
+      btn.addEventListener("click", () => {
+        // Luân phiên bật/tắt class để tạo hiệu ứng đẩy menu
+        menu.classList.toggle("max-h-0");
+        menu.classList.toggle("max-h-64");
+      });
+    </script>
+
+    <!-- PHẦN MAIN -->
+    <main class="w-full">
+      <div
+        class="relative bg-cover bg-center h-[450px] md:h-[600px]"
+        style="background-image: url(img/phong-tap.jpg)"
+      >
+        <div class="absolute inset-0 bg-black/80"></div>
+
+        <div
+          class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 max-w-4xl mx-auto"
+        >
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl font-bold text-text-main mb-6 leading-tight text-center drop-shadow-2xl"
+          >
+            Vượt Qua Giới Hạn <br />
+            <span class="text-accent">Chinh Phục Vóc Dáng</span>
+          </h1>
+
+          <p
+            class="text-base md:text-lg text-text-muted mb-8 max-w-2xl mx-auto"
+          >
+            Trải nghiệm không gian tập luyện chuẩn 5 sao với các thiết bị hiện
+            đại và đội ngũ huấn luyện viên chuyên nghiệp. Bắt đầu hành trình
+            thay đổi bản thân ngay hôm nay.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+            <button
+              class="bg-accent text-primary px-8 py-3 rounded-full font-bold hover:bg-btn-hover transition-colors w-full sm:w-auto"
+            >
+              <a href="contact.html">Tham gia ngay</a>
+            </button>
+            <button
+              class="bg-transparent border-2 border-accent text-accent px-8 py-3 rounded-full font-bold hover:bg-accent hover:text-primary transition-colors w-full sm:w-auto"
+            >
+              <a href="#vip">Tìm hiểu thêm</a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section id="vip" class="py-5 w-full bg-primary">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-span mb-4 text-center lg:text-5xl"
+          >
+            Đặc Quyền Tại FitLife
+          </h2>
+          <p
+            class="text-text-muted max-w-2xl mx-auto mb-12 text-center test-sm"
+          >
+            Thiết bị đa dạng tối tân, quyền lợi cho hội viên, mọi mục tiêu.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <article
+              class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all duration-300 text-center group cursor-pointer"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-4 p-3"
+              >
+                <img
+                  src="img/icon-equipment.svg"
+                  alt="Thiết Bị"
+                  class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3
+                class="text-xl font-bold text-text-main mb-3 group-hover:text-accent transition-colors"
+              >
+                Thiết Bị Chuẩn Olympic
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Hệ thống máy tập Technogym nhập khẩu 100%, đáp ứng mọi nhu cầu
+                từ cơ bản đến vận động viên chuyên nghiệp.
+              </p>
+            </article>
+
+            <article
+              class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all duration-300 text-center group cursor-pointer"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-4 p-3"
+              >
+                <img
+                  src="img/icon-coach.svg"
+                  alt="Huấn Luyện Viên"
+                  class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3
+                class="text-xl font-bold text-text-main mb-3 group-hover:text-accent transition-colors"
+              >
+                Huấn Luyện Viên 1:1
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Thiết kế lộ trình tập luyện và dinh dưỡng chuyên biệt, bám sát
+                thể trạng để đạt kết quả tối ưu nhất.
+              </p>
+            </article>
+
+            <article
+              class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all duration-300 text-center group cursor-pointer"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-4 p-3"
+              >
+                <img
+                  src="img/icon-cardio.svg"
+                  alt="Lớp Học"
+                  class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3
+                class="text-xl font-bold text-text-main mb-3 group-hover:text-accent transition-colors"
+              >
+                Lớp Học Đa Dạng
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Hơn 50+ lớp Yoga, Pilates, HIIT mỗi tuần với không gian tập
+                luyện rộng rãi và âm thanh ánh sáng sống động.
+              </p>
+            </article>
+
+            <article
+              class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all duration-300 text-center group cursor-pointer"
+            >
+              <div
+                class="w-16 h-16 mx-auto bg-primary rounded-full flex items-center justify-center mb-4 p-3"
+              >
+                <img
+                  src="img/icon-vip.svg"
+                  alt="Đặc Quyền VIP"
+                  class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <h3
+                class="text-xl font-bold text-text-main mb-3 group-hover:text-accent transition-colors"
+              >
+                Tiện Ích Spa 5 Sao
+              </h3>
+              <p class="text-text-muted text-sm leading-relaxed">
+                Thư giãn hoàn toàn sau giờ tập với hệ thống phòng xông hơi
+                khô/ướt, tủ khóa thông minh và khu vực Lounge.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="khoa-hoc" class="py-5 w-full bg-secondary">
+        <div class="max-w-6xl mx-auto px-4">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-span mb-12 text-center lg:text-5xl"
+          >
+            Khóa Học Nổi Bật
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <article
+              class="bg-primary rounded-2xl overflow-hidden border border-gray-800 hover:border-accent transition-all group"
+            >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/premium.jpg"
+                  alt="Khóa học Premium Fitness"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-text-main mb-2 group-hover:text-accent transition-colors"
+                >
+                  <a href="fitness.html">Premium Fitness</a>
+                </h3>
+                <p class="text-text-muted text-sm mb-6 h-16">
+                  Lộ trình thiết kế chuyên sâu giúp tăng cơ, giảm mỡ nhanh chóng
+                  cùng hệ thống máy tập Technogym hiện đại.
+                </p>
+                <a
+                  href="contact.html"
+                  class="inline-block text-center w-full bg-transparent border-2 border-accent text-accent px-6 py-2 rounded-full font-bold hover:bg-accent hover:text-primary transition-colors"
+                >
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article
+              class="bg-primary rounded-2xl overflow-hidden border border-gray-800 hover:border-accent transition-all group"
+            >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/yoga.jpg"
+                  alt="Khóa học Yoga & Pilates"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-text-main mb-2 group-hover:text-accent transition-colors"
+                >
+                  <a href="yoga-pilates.html">Yoga & Pilates Balance</a>
+                </h3>
+                <p class="text-text-muted text-sm mb-6 h-16">
+                  Tìm lại sự cân bằng, dẻo dai và giải tỏa căng thẳng hiệu quả
+                  trong không gian yên tĩnh chuẩn 5 sao.
+                </p>
+                <a
+                  href="contact.html"
+                  class="inline-block text-center w-full bg-transparent border-2 border-accent text-accent px-6 py-2 rounded-full font-bold hover:bg-accent hover:text-primary transition-colors"
+                >
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+
+            <article
+              class="bg-primary rounded-2xl overflow-hidden border border-gray-800 hover:border-accent transition-all group"
+            >
+              <div class="h-56 overflow-hidden">
+                <img
+                  src="img/cardio.jpg"
+                  alt="Khóa học Cardio & HIIT"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+              <div class="p-6">
+                <h3
+                  class="text-xl font-bold text-text-main mb-2 group-hover:text-accent transition-colors"
+                >
+                  <a href="cardio-HIIT.html">Cardio & HIIT Burning</a>
+                </h3>
+                <p class="text-text-muted text-sm mb-6 h-16">
+                  Đốt cháy calo tối đa, tăng cường sức bền tim mạch với các bài
+                  tập cường độ cao đầy năng lượng.
+                </p>
+                <a
+                  href="contact.html"
+                  class="inline-block text-center w-full bg-transparent border-2 border-accent text-accent px-6 py-2 rounded-full font-bold hover:bg-accent hover:text-primary transition-colors"
+                >
+                  Đăng ký ngay
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- PHẦN FOTTER -->
+    <footer
+      class="w-full p-6 bg-primary border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6"
+    >
+      <span class="text-text-muted text-lg text-center md:text-left">
+        © 2026
+        <a href="#" class="hover:text-accent transition-colors font-bold"
+          >FitLife™</a
+        >. Bản quyền thuộc về FitLife.
+      </span>
+
+      <form
+        class="flex flex-col sm:flex-row items-center justify-center gap-3 w-full md:w-auto"
+      >
+        <label for="tel" class="sr-only"
+          >Nhập số điện thoại để nhận ưu đãi</label
+        >
+        <input
+          type="tel"
+          id="tel"
+          class="bg-secondary border border-gray-700 text-text-main text-sm rounded-full focus:ring-accent focus:border-accent outline-none block w-full sm:w-64 px-5 py-2.5 placeholder:text-text-muted transition-colors"
+          placeholder="Nhập số đt của bạn..."
+          required
+        />
+
+        <button
+          type="submit"
+          class="bg-accent text-primary px-6 py-2.5 rounded-full font-bold hover:bg-btn-hover transition-colors whitespace-nowrap w-full sm:w-auto"
+        >
+          Xác nhận
+        </button>
+      </form>
+    </footer>
+  </body>
+</html>

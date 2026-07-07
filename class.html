@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách Lớp học - FitLife</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-primary: #0b0c10;
+        --color-secondary: #1a1b20;
+        --color-accent: #c5a880;
+        --color-text-main: #ffffff;
+        --color-text-muted: #8a8d91;
+        --color-btn-hover: #d8bf9c;
+        --color-span: #eab308;
+      }
+    </style>
+  </head>
+  <body class="bg-primary text-text-main font-sans">
+    <header class="sticky top-0 z-50 bg-secondary border-b border-gray-800 p-4">
+      <div
+        class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center md:justify-between relative"
+      >
+        <a
+          href="index.html"
+          class="w-48 lg:w-50 block hover:opacity-80 transition-opacity mx-auto md:mx-0"
+        >
+          <img src="img/Logo.png" alt="FitLife logo" class="w-full h-auto" />
+        </a>
+
+        <nav class="hidden md:flex gap-6 font-medium text-2xl">
+          <a href="index.html" class="hover:text-accent">Trang chủ</a>
+          <a href="class.html" class="text-accent font-bold">Lớp học</a>
+          <a href="contact.html" class="hover:text-accent">Liên hệ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="py-16 px-4">
+      <div class="max-w-6xl mx-auto text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6 lg:text-7xl">
+          Chọn Khóa Học <span class="text-span">Phù Hợp</span>
+        </h1>
+        <p class="text-text-muted text-lg">
+          Khám phá các lộ trình tập luyện chuyên sâu được thiết kế riêng cho mục
+          tiêu của bạn.
+        </p>
+      </div>
+
+      <section
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+      >
+        <article
+          class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all group"
+        >
+          <div class="h-48 bg-primary rounded-xl mb-6 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1520"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            />
+          </div>
+          <h3 class="text-2xl font-bold mb-3 group-hover:text-accent">
+            Yoga & Pilates
+          </h3>
+          <p class="text-text-muted mb-6">
+            Tăng cường sự dẻo dai, phục hồi cơ thể và tinh thần.
+          </p>
+          <a
+            href="yoga-pilates.html"
+            class="block text-center w-full bg-accent text-primary py-3 rounded-full font-bold hover:bg-btn-hover transition-colors"
+            >Xem chi tiết</a
+          >
+        </article>
+
+        <article
+          class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all group"
+        >
+          <div class="h-48 bg-primary rounded-xl mb-6 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1470"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            />
+          </div>
+          <h3 class="text-2xl font-bold mb-3 group-hover:text-accent">
+            HIIT Burning
+          </h3>
+          <p class="text-text-muted mb-6">
+            Đốt mỡ siêu tốc với các bài tập cường độ cao.
+          </p>
+          <a
+            href="cardio-HIIT.html"
+            class="block text-center w-full bg-accent text-primary py-3 rounded-full font-bold hover:bg-btn-hover transition-colors"
+            >Xem chi tiết</a
+          >
+        </article>
+
+        <article
+          class="bg-secondary p-6 rounded-2xl border border-gray-800 hover:border-accent transition-all group"
+        >
+          <div class="h-48 bg-primary rounded-xl mb-6 overflow-hidden">
+            <img
+              src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform"
+            />
+          </div>
+          <h3 class="text-2xl font-bold mb-3 group-hover:text-accent">
+            Boxing Fitness
+          </h3>
+          <p class="text-text-muted mb-6">
+            Giải tỏa căng thẳng, rèn luyện sự nhanh nhẹn.
+          </p>
+          <a
+            href="fitness.html"
+            class="block text-center w-full bg-accent text-primary py-3 rounded-full font-bold hover:bg-btn-hover transition-colors"
+            >Xem chi tiết</a
+          >
+        </article>
+      </section>
+    </main>
+
+    <!-- PHẦN FOTTER -->
+    <footer
+      class="w-full py-4 px-6 bg-primary border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6"
+    >
+      <span
+        class="text-text-muted text-lg text-center md:text-left leading-none"
+      >
+        © 2026
+        <a
+          href="index.html"
+          class="hover:text-accent transition-colors font-bold"
+          >FitLife™</a
+        >. Bản quyền thuộc về FitLife.
+      </span>
+
+      <form
+        class="flex flex-col sm:flex-row items-center justify-center gap-3 w-full md:w-auto"
+      >
+        <label for="tel" class="sr-only"
+          >Nhập số điện thoại để nhận ưu đãi</label
+        >
+        <input
+          type="tel"
+          id="tel"
+          class="bg-secondary border border-gray-700 text-text-main text-sm rounded-full focus:ring-accent focus:border-accent outline-none block w-full sm:w-64 px-5 py-2.5 placeholder:text-text-muted transition-colors"
+          placeholder="Nhập số đt của bạn..."
+          required
+        />
+
+        <button
+          type="submit"
+          class="bg-accent text-primary px-4 py-2 rounded-full font-bold hover:bg-btn-hover transition-colors whitespace-nowrap w-full sm:w-auto"
+        >
+          Xác nhận
+        </button>
+      </form>
+    </footer>
+  </body>
+</html>

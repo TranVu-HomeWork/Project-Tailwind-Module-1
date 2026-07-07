@@ -121,11 +121,9 @@
 
     <!-- PHẦN FOTTER -->
     <footer
-      class="w-full py-4 px-6 bg-primary border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6"
+      class="w-full p-6 bg-primary border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6"
     >
-      <span
-        class="text-text-muted text-lg text-center md:text-left leading-none"
-      >
+      <span class="text-text-muted text-lg text-center md:text-left">
         © 2026
         <a
           href="index.html"
@@ -134,26 +132,31 @@
         >. Bản quyền thuộc về FitLife.
       </span>
 
-      <form
-        class="flex flex-col sm:flex-row items-center justify-center gap-3 w-full md:w-auto"
-      >
-        <label for="tel" class="sr-only"
-          >Nhập số điện thoại để nhận ưu đãi</label
+      <!-- Form đăng ký ưu đãi -->
+      <form class="flex flex-col gap-2 w-full md:w-auto">
+        <label
+          for="tel"
+          class="text-text-main font-medium mb-1 hover:text-accent transition-colors flex items-center gap-2"
         >
-        <input
-          type="tel"
-          id="tel"
-          class="bg-secondary border border-gray-700 text-text-main text-sm rounded-full focus:ring-accent focus:border-accent outline-none block w-full sm:w-64 px-5 py-2.5 placeholder:text-text-muted transition-colors"
-          placeholder="Nhập số đt của bạn..."
-          required
-        />
+          📞 Nhập số điện thoại để nhận ưu đãi:
+        </label>
 
-        <button
-          type="submit"
-          class="bg-accent text-primary px-4 py-2 rounded-full font-bold hover:bg-btn-hover transition-colors whitespace-nowrap w-full sm:w-auto"
-        >
-          Xác nhận
-        </button>
+        <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
+          <input
+            type="tel"
+            id="tel"
+            class="bg-secondary border border-gray-700 text-text-main text-sm rounded-full focus:ring-accent focus:border-accent focus:shadow-accent/40 outline-none block w-full sm:w-64 px-5 py-2.5 placeholder:text-text-muted transition-all"
+            placeholder="Nhập số đt của bạn..."
+            required
+          />
+
+          <button
+            type="submit"
+            class="bg-accent text-primary px-6 py-2.5 rounded-full font-bold hover:bg-btn-hover hover:shadow-lg hover:shadow-accent/30 transition-all whitespace-nowrap w-full sm:w-auto"
+          >
+            Xác nhận
+          </button>
+        </div>
       </form>
     </footer>
   </body>

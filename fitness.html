@@ -18,19 +18,16 @@
     </style>
   </head>
   <body class="bg-primary text-text-main font-sans antialiased">
-    </head>
-  <body class="bg-primary text-text-main font-sans antialiased">
     <header class="sticky top-0 z-50 bg-secondary border-b border-gray-800 p-4">
       <div
-        class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center md:justify-between relative"
+        class="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-center md:justify-between"
       >
         <a
           href="index.html"
-          class="w-48 lg:w-50 block hover:opacity-80 transition-opacity mx-auto md:mx-0"
+          class="w-48 lg:w-50 block hover:opacity-80 transition-opacity"
         >
           <img src="img/Logo.png" alt="FitLife logo" class="w-full h-auto" />
         </a>
-
         <nav class="hidden md:flex gap-6 font-medium text-2xl">
           <a href="index.html" class="hover:text-accent">Trang chủ</a>
           <a href="class.html" class="text-accent font-bold">Lớp học</a>
@@ -41,7 +38,7 @@
 
     <main class="max-w-7xl mx-auto px-4 md:px-8 py-12">
       <div class="mb-12 border-b border-gray-800 pb-6">
-        <h3 class="text-main font-bold uppercase tracking-wider text-2xl pt-1">
+        <h3 class="text-main font-bold uppercase tracking-wider text-2xl">
           Phát Triển Hình Thể
         </h3>
         <h1 class="text-span text-4xl md:text-5xl font-extrabold mt-2">
@@ -58,81 +55,185 @@
           <span class="text-accent">📅</span> Lịch Học Trong Tuần:
         </h2>
         <div
-          class="w-full overflow-x-auto rounded-xl border border-gray-800 bg-secondary"
+          class="w-full overflow-x-auto rounded-xl border border-gray-800 bg-secondary shadow-lg"
         >
-          <table class="w-full text-left border-collapse min-w-[700px]">
+          <table class="w-full text-left border-collapse min-w-[800px]">
+            <caption class="sr-only">
+              Lịch học tuần của lớp Fitness & Strength
+            </caption>
             <thead>
               <tr class="border-b border-gray-800 bg-black/30">
-                <th class="p-4 font-bold text-span text-xl">Ca Học</th>
-                <th class="p-4 font-bold text-text-main text-xl">Thứ Hai</th>
-                <th class="p-4 font-bold text-text-main text-xl">Thứ Ba</th>
-                <th class="p-4 font-bold text-text-main text-xl">Thứ Tư</th>
-                <th class="p-4 font-bold text-text-main text-xl">Thứ Năm</th>
-                <th class="p-4 font-bold text-text-main text-xl">Thứ Sáu</th>
-                <th class="p-4 font-bold text-text-main text-xl">Thứ Bảy</th>
-                <th class="p-4 font-bold text-red-400 text-xl">Chủ Nhật</th>
+                <th class="p-4 font-bold text-span text-lg">Ca Học</th>
+                <th class="p-4 font-bold text-text-main text-lg">Thứ Hai</th>
+                <th class="p-4 font-bold text-text-main text-lg">Thứ Ba</th>
+                <th class="p-4 font-bold text-text-main text-lg">Thứ Tư</th>
+                <th class="p-4 font-bold text-text-main text-lg">Thứ Năm</th>
+                <th class="p-4 font-bold text-text-main text-lg">Thứ Sáu</th>
+                <th class="p-4 font-bold text-text-main text-lg">Thứ Bảy</th>
+                <th class="p-4 font-bold text-red-400 text-lg">Chủ Nhật</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-800/60">
               <tr class="hover:bg-primary/30 transition-colors">
                 <td
-                  class="p-4 font-semibold text-span text-xl whitespace-nowrap bg-black/10"
+                  class="p-4 font-semibold text-span text-lg whitespace-nowrap bg-black/10"
                 >
                   Ca Sáng
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">08:00 - 09:30</p>
-                  <p class="text-base font-medium">Cơ Đùi & Mông</p>
+                  <p class="text-sm text-span">08:00-09:30</p>
+                  <p class="text-sm font-medium">Cơ Đùi & Mông</p>
                 </td>
-                <td class="p-4 text-text-muted text-base italic">Nghỉ ngơi</td>
+                <td class="p-4 text-text-muted text-sm italic">Nghỉ ngơi</td>
                 <td class="p-4">
-                  <p class="text-base text-span">08:00 - 09:30</p>
-                  <p class="text-base font-medium">Cơ Ngực & Vai</p>
+                  <p class="text-sm text-span">08:00-09:30</p>
+                  <p class="text-sm font-medium">Cơ Ngực & Vai</p>
                 </td>
-                <td class="p-4 text-text-muted text-base italic">Nghỉ ngơi</td>
+                <td class="p-4 text-text-muted text-sm italic">Nghỉ ngơi</td>
                 <td class="p-4">
-                  <p class="text-base text-span">08:00 - 09:30</p>
-                  <p class="text-base font-medium">Toàn Thân Lực</p>
+                  <p class="text-sm text-span">08:00-09:30</p>
+                  <p class="text-sm font-medium">Toàn Thân Lực</p>
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">09:30 - 11:00</p>
-                  <p class="text-base font-medium">Sức Mạnh Nâng Cao</p>
+                  <p class="text-sm text-span">09:30-11:00</p>
+                  <p class="text-sm font-medium">Sức Mạnh Nâng Cao</p>
                 </td>
-                <td class="p-4 text-text-muted text-base italic">Nghỉ ngơi</td>
+                <td class="p-4 text-text-muted text-sm italic">Nghỉ ngơi</td>
               </tr>
               <tr class="hover:bg-primary/30 transition-colors">
                 <td
-                  class="p-4 font-semibold text-span text-xl whitespace-nowrap bg-black/10"
+                  class="p-4 font-semibold text-span text-lg whitespace-nowrap bg-black/10"
                 >
                   Ca Tối
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">17:30 - 19:00</p>
-                  <p class="text-base font-medium">Bài Tập Đẩy Cơ</p>
+                  <p class="text-sm text-span">17:30-19:00</p>
+                  <p class="text-sm font-medium">Bài Tập Đẩy Cơ</p>
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">17:30 - 19:00</p>
-                  <p class="text-base font-medium">Bài Tập Kéo Cơ</p>
+                  <p class="text-sm text-span">17:30-19:00</p>
+                  <p class="text-sm font-medium">Bài Tập Kéo Cơ</p>
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">19:00 - 20:30</p>
-                  <p class="text-base font-medium">Phát Triển Cơ Chân</p>
+                  <p class="text-sm text-span">19:00-20:30</p>
+                  <p class="text-sm font-medium">Phát Triển Cơ Chân</p>
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">17:30 - 19:00</p>
-                  <p class="text-base font-medium">Calisthenics Cơ Bản</p>
+                  <p class="text-sm text-span">17:30-19:00</p>
+                  <p class="text-sm font-medium">Calisthenics</p>
                 </td>
                 <td class="p-4">
-                  <p class="text-base text-span">19:00 - 20:30</p>
-                  <p class="text-base font-medium">Kiến Tạo Cơ Bụng</p>
+                  <p class="text-sm text-span">19:00-20:30</p>
+                  <p class="text-sm font-medium">Kiến Tạo Cơ Bụng</p>
                 </td>
-                <td class="p-4 text-text-muted text-base italic">Nghỉ ngơi</td>
-                <td class="p-4 text-text-muted text-base italic">Nghỉ ngơi</td>
+                <td class="p-4 text-text-muted text-sm italic">Nghỉ ngơi</td>
+                <td class="p-4 text-text-muted text-sm italic">Nghỉ ngơi</td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
+
+      <div>
+        <h2 class="text-3xl font-bold mb-6 flex items-center gap-2">
+          <span class="text-accent">✨</span> Hiệu Quả Tập Luyện Đem Lại
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div
+            class="bg-secondary p-6 rounded-2xl border border-gray-800 flex gap-4 items-start hover:border-accent transition-all duration-300"
+          >
+            <div
+              class="text-2xl bg-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 border border-gray-800 text-accent hover:bg-accent hover:text-primary transition-colors"
+            >
+              📈
+            </div>
+            <div>
+              <h3 class="font-bold text-accent text-2xl mb-1">
+                Xây dựng cơ nạc
+              </h3>
+              <p class="text-text-main text-base">
+                Kích thích cơ phát triển khoa học, giúp định hình các đường nét
+                rõ ràng.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-secondary p-6 rounded-2xl border border-gray-800 flex gap-4 items-start hover:border-accent transition-all duration-300"
+          >
+            <div
+              class="text-2xl bg-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 border border-gray-800 text-accent hover:bg-accent hover:text-primary transition-colors"
+            >
+              🦴
+            </div>
+            <div>
+              <h3 class="font-bold text-accent text-2xl mb-1">
+                Mật độ xương khớp
+              </h3>
+              <p class="text-text-main text-base">
+                Bài tập kháng lực giúp khung xương chịu lực tốt, hỗ trợ bảo vệ
+                khớp.
+              </p>
+            </div>
+          </div>
+          <div
+            class="bg-secondary p-6 rounded-2xl border border-gray-800 flex gap-4 items-start hover:border-accent transition-all duration-300"
+          >
+            <div
+              class="text-2xl bg-primary w-10 h-10 rounded-lg flex items-center justify-center shrink-0 border border-gray-800 text-accent hover:bg-accent hover:text-primary transition-colors"
+            >
+              🔄
+            </div>
+            <div>
+              <h3 class="font-bold text-accent text-2xl mb-1">Trao đổi chất</h3>
+              <p class="text-text-main text-base">
+                Tăng khối lượng cơ giúp cơ thể tiêu hao calo tự nhiên, giữ dáng
+                hiệu quả.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <!-- PHẦN FOTTER -->
+    <footer
+      class="w-full p-6 bg-primary border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-6"
+    >
+      <span class="text-text-muted text-lg text-center md:text-left">
+        © 2026
+        <a
+          href="index.html"
+          class="hover:text-accent transition-colors font-bold"
+          >FitLife™</a
+        >. Bản quyền thuộc về FitLife.
+      </span>
+
+      <!-- Form đăng ký ưu đãi -->
+      <form class="flex flex-col gap-2 w-full md:w-auto">
+        <label
+          for="tel"
+          class="text-text-main font-medium mb-1 hover:text-accent transition-colors flex items-center gap-2"
+        >
+          📞 Nhập số điện thoại để nhận ưu đãi:
+        </label>
+
+        <div class="flex flex-col sm:flex-row items-center gap-3 w-full">
+          <input
+            type="tel"
+            id="tel"
+            class="bg-secondary border border-gray-700 text-text-main text-sm rounded-full focus:ring-accent focus:border-accent focus:shadow-accent/40 outline-none block w-full sm:w-64 px-5 py-2.5 placeholder:text-text-muted transition-all"
+            placeholder="Nhập số đt của bạn..."
+            required
+          />
+
+          <button
+            type="submit"
+            class="bg-accent text-primary px-6 py-2.5 rounded-full font-bold hover:bg-btn-hover hover:shadow-lg hover:shadow-accent/30 transition-all whitespace-nowrap w-full sm:w-auto"
+          >
+            Xác nhận
+          </button>
+        </div>
+      </form>
+    </footer>
   </body>
 </html>
